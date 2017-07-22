@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcornea.musicalstructureapp.Player">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is the main audiobook player to actually play audiobook I think that the MediaPlayer API could be used" />
+
+    <ImageView
+        android:id="@+id/listener_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listener_new_rect" />
+
+    <Button
+        android:id="@+id/play_button"
+        style="@style/player_button"
+        android:layout_alignBottom="@id/listener_image"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/play_button" />
+
+    <Button
+        android:id="@+id/next_button"
+        style="@style/player_button"
+        android:layout_alignBottom="@id/listener_image"
+        android:layout_toRightOf="@id/play_button"
+        android:background="@drawable/next_button" />
+
+    <Button
+        android:id="@+id/previous_button"
+        style="@style/player_button"
+        android:layout_alignBottom="@id/listener_image"
+        android:layout_toLeftOf="@id/play_button"
+        android:background="@drawable/previous_button" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_player_audiobooks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@color/first"
+            android:text="Books" />
+
+        <Button
+            android:id="@+id/button_player_authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/second"
+            android:text="@string/author" />
+
+        <Button
+            android:id="@+id/button_player_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/third"
+            android:text="Genres"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_player_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/third"
+        android:text="Home"
+        android:textSize="16sp" />
+
+</RelativeLayout>

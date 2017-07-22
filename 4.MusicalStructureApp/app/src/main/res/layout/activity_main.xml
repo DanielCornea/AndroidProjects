@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dcornea.musicalstructureapp.MainActivity">
+
+    <Button
+        android:id="@+id/front_book"
+        style="@style/item"
+        android:background="@color/first"
+        android:text="@string/book" />
+
+    <Button
+        android:id="@+id/front_auth"
+        style="@style/item"
+        android:background="@color/second"
+        android:text="@string/author" />
+
+    <Button
+        android:id="@+id/front_genre"
+        style="@style/item"
+        android:background="@color/third"
+        android:text="@string/genre" />
+
+</LinearLayout>

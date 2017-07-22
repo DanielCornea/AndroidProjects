@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dcornea.accountingpriceapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economics Quiz" />
+
+            <!--   First Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economics is a social science concerned with….? " />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/econ_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distribution and production of air and water" />
+
+                <RadioButton
+                    android:id="@+id/econ_mat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study of the materials" />
+
+                <RadioButton
+                    android:id="@+id/econ_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Production and consumption of goods and services" />
+
+                <RadioButton
+                    android:id="@+id/econ_equator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study of the reindeer population near Equator" />
+            </RadioGroup>
+            <!--   Second Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who is considered the father of modern economics?" />
+
+            <EditText
+                android:id="@+id/smith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Not Keynes" />
+
+
+            <!--   Third Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who are considered fathers of communism" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/father_engels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Engels" />
+
+                <CheckBox
+                    android:id="@+id/father_lenin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lenin" />
+
+                <CheckBox
+                    android:id="@+id/father_marx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Marx" />
+            </LinearLayout>
+
+            <!--   Fourth Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="According to Adam Smith what is invisible?" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/smith_foot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The foot" />
+
+                <RadioButton
+                    android:id="@+id/smith_force"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The force" />
+
+                <RadioButton
+                    android:id="@+id/smith_capital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The capital" />
+
+                <RadioButton
+                    android:id="@+id/smith_hand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The hand" />
+            </RadioGroup>
+
+            <!--   Fifth Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How many years does a Kondratiev cycle have?" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/cycle_35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3-5" />
+
+                <RadioButton
+                    android:id="@+id/cycle_510"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5-10" />
+
+                <RadioButton
+                    android:id="@+id/cycle_1020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-20" />
+
+                <RadioButton
+                    android:id="@+id/cycle_4560"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45-60" />
+            </RadioGroup>
+
+            <!--   Sixth Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What was ideology behind the  Soviet Union ?" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/soviet_libert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Libertarianism" />
+
+                <RadioButton
+                    android:id="@+id/soviet_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Communism" />
+
+                <RadioButton
+                    android:id="@+id/soviet_anarch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anarchism" />
+
+                <RadioButton
+                    android:id="@+id/soviet_deus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theocracy" />
+            </RadioGroup>
+
+            <!--   Seventh Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To which school of thought belonged Ludwig von Misses?" />
+
+            <EditText
+                android:id="@+id/seventh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Not German" />
+
+            <!--   Eighth Question -->
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is socialism identical to communism?" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/com_soc_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/com_soc_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submit_button"
+                android:text="Submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

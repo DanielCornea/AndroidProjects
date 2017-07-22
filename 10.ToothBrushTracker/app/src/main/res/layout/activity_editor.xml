@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Name:"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Brand:"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/edit_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Quantity:"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/edit_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Price:"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=""
+            android:inputType="number"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/image_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addImage" />
+
+    <Button
+        android:id="@+id/button_increase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/increase" />
+
+    <Button
+        android:id="@+id/button_decrease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease" />
+
+    <Button
+        android:id="@+id/button_order_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order_more" />
+    <ImageView
+        android:id="@+id/image_list"
+        android:layout_width="48dp"
+        android:layout_height="60dp" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GoogleLibraryApp</string>
+    <string name="no_internet_connection">no internet boss</string>
+    <string name="no_books">no books available</string>
+    <string name="do_type">What subject are you interested in?</string>
+    <string name="search">Search</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="no_author">There are no authors for this book</string>
+
+</resources>

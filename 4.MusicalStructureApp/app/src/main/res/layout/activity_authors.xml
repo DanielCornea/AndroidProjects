@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authors"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dcornea.musicalstructureapp.Authors">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/front_book"
+            style="@style/item"
+            android:background="@color/first"
+            android:text="@string/book" />
+
+        <Button
+            android:id="@+id/front_auth"
+            style="@style/item"
+            android:background="@color/second"
+            android:text="@string/author" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here you shall find a list of authors" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/author_item"
+                android:text="Samuel Hamilton" />
+
+            <TextView
+                style="@style/author_sub_item"
+                android:text="18 Books" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/author_item"
+                android:text="Daniel Cornea" />
+
+            <TextView
+                style="@style/author_sub_item"
+                android:text="3 Books" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/author_item"
+                android:text="Udacity Reviewer" />
+
+            <TextView
+                style="@style/author_sub_item"
+                android:text="3 Books" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/front_genre"
+        style="@style/item"
+        android:layout_alignParentBottom="true"
+        android:background="@color/third"
+        android:text="@string/genre" />
+
+
+</RelativeLayout>

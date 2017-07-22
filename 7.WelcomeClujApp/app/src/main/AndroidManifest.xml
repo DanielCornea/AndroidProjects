@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dcornea.welcomeclujapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UniversitiesActivity"
+            android:label="@string/univ" />
+        <activity
+            android:name=".RestaurantsActivity"
+            android:label="@string/res" />
+        <activity
+            android:name=".HistoricalActivity"
+            android:label="@string/histSites" />
+        <activity
+            android:name=".TheatersActivity"
+            android:label="@string/lead" />
+    </application>
+
+</manifest>

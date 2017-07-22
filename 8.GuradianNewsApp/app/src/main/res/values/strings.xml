@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GuradianNewsApp</string>
+    <string name="title">Title</string>
+    <string name="section">Section</string>
+    <string name="no_internet_connection">No internet Boss</string>
+    <string name="no_articles">No articles mate</string>
+    <!--preferences-->
+    <string name="business">business</string>
+</resources>

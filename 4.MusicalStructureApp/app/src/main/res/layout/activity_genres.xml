@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_genres"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dcornea.musicalstructureapp.Genres">
+
+    <Button
+        android:id="@+id/front_genre"
+        style="@style/item"
+        android:background="@color/third"
+        android:text="@string/genre" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/front_genre"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here you shall find a list of genres" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_id_1"
+                style="@style/author_item"
+                android:paddingRight="10dp"
+                android:text="Lazy people of the world,  unite!!!" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/book_id_2"
+                style="@style/author_item"
+                android:paddingRight="10dp"
+                android:text="Work hard, play hard" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/front_auth"
+            style="@style/item"
+            android:background="@color/second"
+            android:text="@string/author" />
+
+        <Button
+            android:id="@+id/front_book"
+            style="@style/item"
+            android:background="@color/first"
+            android:text="@string/book" />
+    </LinearLayout>
+</RelativeLayout>
